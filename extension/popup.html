@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="timer-container">
+    <h1 id="title">Sugo</h1>
+    <select id="mode">
+      <option value="default">Pomodoro (25/5)</option>
+      <option value="long">Deep Work (50/10)</option>
+      <option value="short">Sprint (15/3)</option>
+    </select>
+    <div id="time">25:00</div>
+    <div class="controls">
+      <button id="start">Start</button>
+      <button id="stop">Stop</button>
+      <label><input type="checkbox" id="soundToggle" checked> Sound</label>
+    </div>
+    <button id="dismiss" style="display:none">Dismiss</button>
+    <audio id="alarm" src="alarm.mp3" preload="auto"></audio>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

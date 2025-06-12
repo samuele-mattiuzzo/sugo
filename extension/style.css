@@ -1,0 +1,35 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background: #fff5f5;
+  padding: 20px;
+  width: 300px;
+}
+.timer-container {
+  border-radius: 16px;
+  padding: 20px;
+  background: #ffdddd;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+#title {
+  font-size: 20px;
+  color: #990000;
+}
+#time {
+  font-size: 48px;
+  margin: 20px 0;
+  color: #550000;
+}
+.controls button,
+#dismiss {
+  padding: 10px 20px;
+  margin: 5px;
+  background: #cc0000;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+select {
+  margin-bottom: 10px;
+}
