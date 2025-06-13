@@ -13,7 +13,7 @@
     }
   },
   "background": {
-    "service_worker": "popup.js"
+    "service_worker": "background.js"
   },
   "icons": {
     "16": "icon16.png",
