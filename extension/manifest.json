@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Sugo",
-  "description": "A focused Pomodoro timer with smart cycles and sound alerts.",
+  "description": "A basic Pomodoro timer.",
   "version": "1.0",
   "permissions": ["storage", "alarms"],
   "action": {

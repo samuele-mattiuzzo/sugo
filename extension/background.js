@@ -8,7 +8,7 @@ let state = {
 }
 
 const durations = {
-  test: { work: 1, rest: 1 },
+  test: { work: 0.5, rest: 0.5 },
   default: { work: 25, rest: 5 },
   short: { work: 15, rest: 3 },
   long: { work: 50, rest: 10 }
@@ -48,6 +48,7 @@ function startPhase() {
 
 function tick() {
   const remaining = state.endTime - Date.now()
+  const badgeColor = state.isWork ? '#cc0000' : '#22cc00'
   if (remaining <= 0) {
     clearInterval(timer)
     state.running = false
@@ -57,11 +58,11 @@ function tick() {
     const min = Math.floor(remaining / 60000)
     const sec = Math.floor((remaining % 60000) / 1000)
     const text = `${min}:${sec.toString().padStart(2, '0')}`
-    updateBadge(text)
+    updateBadge(text, badgeColor)
   }
 }
 
-function updateBadge(text) {
+function updateBadge(text, color = '#fff') {
   chrome.action.setBadgeText({ text })
-  chrome.action.setBadgeBackgroundColor({ color: '#cc0000' })
+  chrome.action.setBadgeBackgroundColor({ color: color })
 }
