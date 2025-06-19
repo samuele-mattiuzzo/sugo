@@ -8,7 +8,7 @@ let state = {
 }
 
 const durations = {
-  test: { work: 0.5, rest: 0.5 },
+  //test: { work: 0.5, rest: 0.5 },
   default: { work: 25, rest: 5 },
   short: { work: 15, rest: 3 },
   long: { work: 50, rest: 10 }
