@@ -3,7 +3,7 @@
   "name": "Sugo",
   "description": "A basic Pomodoro timer.",
   "version": "1.0",
-  "permissions": ["storage", "alarms"],
+  "permissions": [],
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
